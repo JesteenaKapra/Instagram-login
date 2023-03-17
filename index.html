@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Instagram</title>
+            <link rel="shortcut icon" href="images/favIcon.jpg" type="image/png">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            </head>
+    <body>
+       
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 slide">
+                    <div class="slide-container" style="background-image: url(/images/phone-frame.png); background-size: contain;">
+                        <div class="slide-content" id="slide-content">
+                            <img src="./images/slide (1).jpg" alt="slide image" class="active">
+                            <img src="./images/slide (2).jpg" alt="slide image">
+                            <img src="./images/slide (3).jpg" alt="slide image">
+                            <img src="./images/slide (4).jpg" alt="slide image">
+                            <img src="./images/slide (5).jpg" alt="slide image">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 box">
+                    
+                    <div class="form-container border">
+                        <form id="signin-form">
+                            <div>
+                                <img src="images/Instagram_logo.png" class="logo">
+                            </div>
+                            <div class="form-group ">
+                                <div class="animate-input">
+                                    <span>Phone number, user name or email address</span>
+                                    <input type="email" class="form-control" id="InputEmail" >
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="animate-input">
+                                    <span>Password</span>
+                                    <input type="password" class="form-control" id="InputPassword">
+                                    <button>Show</button>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-login" id="signin-btn" disabled>Log in</button>
+                            <p class="header__center">OR</p>
+                            
+                        </form>
+                        <a class="facebook-login"> <img src="images/Facebook_icon_2013.png" class="facebook-icon">Log In With Facebook</a><br>
+                        <a class="forgot-password">Forgotten your password?</a><br>.
+                    </div> 
+                    <div class="sign-up border">
+                        <p>
+                            Don't have an account?
+                            <a href="#">Sign up</a>
+                        </p> 
+                    </div> 
+                    <div class="app-download">
+                        <p>Get the app.</p>
+                        <div class="store-link">
+                            <a href="#">
+                                <img src="./images/get-it-on-google-play-badge.png" alt="app store">
+                            </a>
+                            <a href="#">
+                                <img src="./images/microsoft.png" alt="google play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="links">
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Jobs</a>
+                <a href="#">Help</a>
+                <a href="#">API</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Top Accounts</a>
+                <a href="#">Hashtags</a>
+                <a href="#">Locations</a>
+                <a href="#" id="darkmode-toggle">Darkmode</a>
+            </div>
+            <div class="copyright">
+                © 2021 Instagram from Facebook
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </body> 
+</html>

@@ -1,0 +1,328 @@
+:root {
+    --body-bg: #fafafa;
+    --box-bg: #fff;
+    --box-border-color: #dbdbdb;
+    --txt-color: #262626;
+    --txt-second-color: #8e8e8e;
+    --btn-bg: #0095f6;
+    --btn-color: #fff;
+    --fb-color: #385185;
+    --a-color: #00376b;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #fafafa;
+}
+/* .phone{
+    padding-top:20px;
+    height:650px;
+    float:right;
+    margin:auto;
+} */
+.container-fluid{
+    margin-top: 20px;
+}
+
+.logo{
+    width: 174px;
+    height:60px;
+    margin-left: 15%;
+    
+}
+
+/* .image{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+} */
+.slide-container {
+    height: 635px;
+    float:right;
+    width:455px;
+}
+
+.slide-content {
+    margin: 99px 0 0 151px;
+    position: relative;
+}
+
+.slide-content img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+.slide-content img.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-container{
+    background: #fff;
+    width:350px;
+    margin-top:6%;
+    
+     
+}
+form{
+    padding:20px 35px;
+    
+}
+form .form-control{
+    
+    background: #fafafa;
+    border:1px solid #efefef;
+    font-size: 12px;
+    padding:10px 8px;
+    
+}
+input[type="email"]:focus,input[type="password"]:focus{
+    border-color: #0c0c0c;
+    box-shadow: none;
+    outline:none;
+}
+
+.animate-input {
+    height: 36px;
+    border: 1px solid var(--box-border-color);
+    border-radius: 3px;
+    position: relative;
+    margin-top: 3%;
+    
+}
+
+.animate-input span {
+    position: absolute;
+    left: 8px;
+    
+    height: 100%;
+    font-size: 12px;
+    line-height: 36px;
+    color: var(--txt-second-color);
+    transform-origin: left;
+    transition: transform 0.1s ease-in-out;
+    pointer-events: none;
+}
+
+.animate-input input {
+    width: 100%;
+    height: 100%;
+    padding: 9px 8px 7px;
+    border: 0;
+    outline: 0;
+    
+    background-color: var(--box-bg);
+    color: var(--txt-color);
+}
+
+.animate-input.active span {
+    transform: scale(0.83333) translateY(-10px);
+}
+
+.animate-input.active input {
+    padding: 14px 0 2px 8px;
+}
+
+.animate-input button {
+    color: var(--txt-color);
+    border: 0;
+    outline: 0;
+    display: inline;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+.animate-input.active button {
+    display: inline;
+}
+
+
+button:disabled {
+    background-color: rgba(0, 149, 246, 0.3);
+}
+
+form .btn{
+    margin:15px 0px;
+    cursor: pointer;
+    font-weight:500; 
+    width:279px;
+    background-color: #0094f6b5;
+    color:#ffffffd2;
+    border-color: #0095f6;
+    border-radius: 9px;
+}
+
+
+::placeholder{
+    color:#999;
+}
+.header__center {
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+    font-weight:600;
+    color:#999;
+}
+
+.header__center::before,
+.header__center::after {
+    content: "";
+    display: block;
+    height: .5px;
+    background-color: #99999979;
+}
+
+.facebook-icon{
+    width:16px;
+    height:16px;
+    margin-right: 6px;
+    margin-left: 90px;
+    margin-bottom: 2%;
+    
+}
+.facebook-login{
+    text-decoration: none;
+    color:#385185;
+    font-weight:600;
+    font-size: 0.9em;
+    cursor: pointer;
+    
+    
+}
+.forgot-password{
+    text-decoration: none;
+    color:#0c0c0c;
+    
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-left: 95px;
+    
+    
+
+}
+.sign-up{
+float: left;
+margin-top: 3%;
+width:350px;
+}
+.sign-up p {
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: #0095f6;
+    font-size: inherit;
+    line-height: 18px;
+    font-weight: 600;
+}
+.app-download {
+
+padding-top: 12%;
+width:350px;
+
+}
+
+.app-download p {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.store-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.store-link a img {
+    height: 40px;
+    padding-right: 3px;
+}
+
+.footer {
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--txt-second-color);
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 8px 12px 8px;
+}
+
+.copyright {
+    padding: 12px 0;
+    color: var(--txt-second-color);
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+}
+@media only screen and (max-width: 800px) {
+    .slide {
+        display: none;
+    }
+    /* .form-container {
+        margin-right: 35%;
+    }
+    .app-download{
+        margin-left: 40%;
+    } */
+    
+    
+    
+}
+/* @media only screen and (max-width: 480px) {
+   
+    .form-container {
+        margin-right: 1%;
+    }
+
+    .app-download{
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 600px) {
+   
+    .form-container{
+        margin-left: 10%;
+    }
+    .app-download{
+        margin-left: 10%;
+    }
+    
+} */
+
+
+
+ 
+
